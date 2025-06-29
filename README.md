@@ -3,7 +3,7 @@ by Faishal Anwar Hasyim
 
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/faishalanwar/sentix/main/docs/app-screenshot.png" alt="Sentix UI" width="750"/>
+  <img src="![image](https://github.com/user-attachments/assets/d9d14f7e-0cba-495d-a524-ff60e3d6bb03)" alt="Sentix UI" width="750"/>
 </p>
 
 <p align="center">
@@ -149,6 +149,3 @@ Ini adalah cara termudah dan paling andal untuk menjalankan aplikasi.
 
 6.  **Akses Aplikasi:**
     Buka browser Anda dan kunjungi **`http://127.0.0.1:8000`**.
-
----
-**Catatan:** Untuk gambar di bagian atas `README.md`, Anda perlu mengunggah screenshot aplikasi Anda (misalnya ke dalam folder `docs` di repo GitHub Anda) dan mengganti URL placeholder `https://raw.githubusercontent.com/user/repo/branch/path/to/image_b7a678.png` dengan URL gambar Anda yang sebenarnya.
