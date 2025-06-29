@@ -66,7 +66,7 @@ Ini adalah cara termudah dan paling andal untuk menjalankan aplikasi.
 
 1.  **Clone Repositori (Jika ada di Git):**
     ```bash
-    git clone[https://hub.docker.com/repository/docker/faishalanwar/sentiment-app/general]
+    git clone[https://github.com/Faishal-Anwar/Sentix-Aplikasi-Analisis-Sentimen-Berbasis-Web-dengan-Insight-AI]
     cd SENTIMENT_APP
     ```
 
@@ -104,7 +104,7 @@ Ini adalah cara termudah dan paling andal untuk menjalankan aplikasi.
 
 1.  **Clone Repositori dan Masuk ke Folder:**
     ```bash
-    git clone [URL_REPOSITORY_ANDA]
+    git clone [https://github.com/Faishal-Anwar/Sentix-Aplikasi-Analisis-Sentimen-Berbasis-Web-dengan-Insight-AI]
     cd SENTIMENT_APP
     ```
 
