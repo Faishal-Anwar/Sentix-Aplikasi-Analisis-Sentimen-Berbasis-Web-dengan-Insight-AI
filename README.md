@@ -163,7 +163,7 @@ SENTIMENT_APP/
 ├── requirements.txt
 ├── .env
 ├── static/
-│   └── (File CSS atau gambar statis lainnya)
+│   └── (akan terisi otomatis, cukup sediakan foidernya saja)
 └── templates/
     ├── index.html
     └── results.html
