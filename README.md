@@ -86,7 +86,7 @@ Jika Anda ingin mengembangkan, memodifikasi, atau melihat kode sumber aplikasi.
 
 1.  **Clone Repositori:**
     ```bash
-    git clone [https://github.com/faishalanwar/sentix.git](https://github.com/faishalanwar/sentix.git)
+    git clone [https://github.com/Faishal-Anwar/Sentix-Aplikasi-Analisis-Sentimen-Berbasis-Web-dengan-Insight-AI]
     cd sentix
     ```
     *(Ganti dengan URL repositori Anda yang sebenarnya)*
@@ -120,7 +120,7 @@ Jika Anda ingin mengembangkan, memodifikasi, atau melihat kode sumber aplikasi.
 
 1.  **Clone Repositori:**
     ```bash
-    git clone [https://github.com/faishalanwar/sentix.git](https://github.com/faishalanwar/sentix.git)
+    git clone [https://github.com/Faishal-Anwar/Sentix-Aplikasi-Analisis-Sentimen-Berbasis-Web-dengan-Insight-AI]
     cd sentix
     ```
 
