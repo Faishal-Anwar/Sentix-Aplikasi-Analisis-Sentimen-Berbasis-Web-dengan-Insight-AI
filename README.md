@@ -66,7 +66,7 @@ Ini adalah cara termudah dan paling andal untuk menjalankan aplikasi.
 
 1.  **Clone Repositori (Jika ada di Git):**
     ```bash
-    git clone[ [URL_REPOSITORY_ANDA]](https://hub.docker.com/repository/docker/faishalanwar/sentiment-app/general)
+    git clone[https://hub.docker.com/repository/docker/faishalanwar/sentiment-app/general]
     cd SENTIMENT_APP
     ```
 
