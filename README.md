@@ -1,7 +1,10 @@
 # Sentix: Aplikasi Analisis Sentimen Berbasis Web dengan Insight AI
 by Faishal Anwar Hasyim
+
 Sebuah aplikasi web intuitif untuk menganalisis sentimen dari data teks (seperti ulasan atau tweet) secara otomatis, mengubah data mentah menjadi visualisasi dan insight yang mudah dipahami.
-![image](https://github.com/user-attachments/assets/3b247144-03a2-48e4-8c75-c35c19a94945)
+
+![image](https://github.com/user-attachments/assets/2dc07f7d-1fe4-4e42-a563-ac1f32aaaad2)
+
 
 ---
 
