@@ -18,12 +18,12 @@ Proyek ini sepenuhnya siap untuk di-deploy menggunakan **Docker**, memastikan pr
 
 ## **Fitur Utama**
 
-* 📤 **Upload Data Fleksibel:** Mendukung file `.csv` dan `.xlsx` sebagai sumber data.
-* 🤖 **Analisis Sentimen Otomatis:** Menggunakan model dari Hugging Face Transformers untuk mengklasifikasikan teks ke dalam kategori Positif, Negatif, dan Netral.
-* 📊 **Visualisasi Interaktif:** Menghasilkan Pie Chart dan Bar Chart distribusi sentimen menggunakan Plotly.
-* ☁️ **Word Cloud Dinamis:** Menampilkan kata-kata kunci yang paling sering muncul untuk setiap kategori sentimen.
-* 💡 **Insight Berbasis AI:** Menggunakan Google Gemini untuk memberikan ringkasan dan tema utama dari setiap sentimen, membantu pengguna memahami "mengapa" di balik data.
-* 🐳 **Siap Docker:** Dilengkapi dengan `Dockerfile` yang dioptimalkan untuk deployment yang mudah dan efisien.
+* **Upload Data Fleksibel:** Mendukung file `.csv` dan `.xlsx` sebagai sumber data.
+* **Analisis Sentimen Otomatis:** Menggunakan model dari Hugging Face Transformers untuk mengklasifikasikan teks ke dalam kategori Positif, Negatif, dan Netral.
+* **Visualisasi Interaktif:** Menghasilkan Pie Chart dan Bar Chart distribusi sentimen menggunakan Plotly.
+* **Word Cloud Dinamis:** Menampilkan kata-kata kunci yang paling sering muncul untuk setiap kategori sentimen.
+* **Insight Berbasis AI:** Menggunakan Google Gemini untuk memberikan ringkasan dan tema utama dari setiap sentimen, membantu pengguna memahami "mengapa" di balik data.
+* **Siap Docker:** Dilengkapi dengan `Dockerfile` yang dioptimalkan untuk deployment yang mudah dan efisien.
 
 ## **Tumpukan Teknologi (Tech Stack)**
 
@@ -45,7 +45,7 @@ SENTIMENT_APP/
 ├── requirements.txt
 ├── .env
 ├── static/
-│   └── (File CSS atau gambar statis lainnya)
+│   └── (Terisi otomatis, cukup sediakan foldernya saja)
 └── templates/
     ├── index.html
     └── results.html
@@ -66,7 +66,7 @@ Ini adalah cara termudah dan paling andal untuk menjalankan aplikasi.
 
 1.  **Clone Repositori (Jika ada di Git):**
     ```bash
-    git clone [URL_REPOSITORY_ANDA]
+    git clone[ [URL_REPOSITORY_ANDA]](https://hub.docker.com/repository/docker/faishalanwar/sentiment-app/general)
     cd SENTIMENT_APP
     ```
 
