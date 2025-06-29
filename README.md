@@ -1,10 +1,10 @@
 # Sentix: Aplikasi Analisis Sentimen Berbasis Web dengan Insight AI
-by Faishal Anwar Hasyim
+
+By Faishal Anwar Hasyim
 
 Sebuah aplikasi web intuitif untuk menganalisis sentimen dari data teks (seperti ulasan atau tweet) secara otomatis, mengubah data mentah menjadi visualisasi dan insight yang mudah dipahami.
 
 ![image](https://github.com/user-attachments/assets/2dc07f7d-1fe4-4e42-a563-ac1f32aaaad2)
-
 
 ---
 
@@ -34,81 +34,97 @@ Proyek ini sepenuhnya siap untuk di-deploy menggunakan **Docker**, memastikan pr
 * **Frontend:** HTML5, Bootstrap 5, Jinja2 Templates
 * **Deployment:** Docker
 
-## **Struktur Proyek**
+## **Cara Menjalankan Aplikasi**
 
-Struktur direktori yang direkomendasikan untuk menjalankan proyek ini dengan `Dockerfile` yang disediakan:
+Ada beberapa cara untuk menjalankan aplikasi ini, tergantung pada kebutuhan Anda.
 
-```
-SENTIMENT_APP/
-├── Dockerfile
-├── main.py
-├── requirements.txt
-├── .env
-├── static/
-│   └── (Terisi otomatis, cukup sediakan foldernya saja)
-└── templates/
-    ├── index.html
-    └── results.html
-```
+### **Untuk Pengguna Akhir (Cara Cepat, Tanpa Source Code)**
 
-## **Panduan Menjalankan Aplikasi**
-
-Ada dua cara untuk menjalankan aplikasi ini: menggunakan Docker (direkomendasikan) atau menjalankan secara lokal.
-
-### **1. Menjalankan dengan Docker (Direkomendasikan)**
-
-Ini adalah cara termudah dan paling andal untuk menjalankan aplikasi.
+Jika Anda hanya ingin menggunakan aplikasi ini tanpa perlu melihat atau mengubah kodenya, Anda bisa langsung menjalankan image yang sudah jadi dari Docker Hub.
 
 **Prasyarat:**
 * Docker sudah terinstall di sistem Anda.
 
 **Langkah-langkah:**
 
-1.  **Clone Repositori (Jika ada di Git):**
-    ```bash
-    git clone[https://github.com/Faishal-Anwar/Sentix-Aplikasi-Analisis-Sentimen-Berbasis-Web-dengan-Insight-AI]
-    cd SENTIMENT_APP
+1.  **Buat file `.env`:**
+    Buat sebuah folder di komputer Anda. Di dalam folder tersebut, buat satu file bernama `.env` dan isi dengan kunci API Anda.
+    ```
+    GOOGLE_API_KEY="MASUKKAN_KUNCI_API_ANDA_DI_SINI"
     ```
 
+2.  **Tarik (Pull) Image dari Docker Hub:**
+    Buka terminal dan jalankan perintah berikut untuk mengunduh image aplikasi yang sudah jadi.
+    ```bash
+    docker pull faishalanwar/sentiment-app:1.0
+    ```
+    *(Pastikan untuk menggunakan nama dan tag image yang benar jika ada versi yang lebih baru).*
+
+3.  **Jalankan Kontainer:**
+    Setelah image berhasil diunduh, jalankan kontainer dari folder yang berisi file `.env` Anda.
+    ```bash
+    # Pastikan terminal Anda berada di folder yang sama dengan file .env
+    docker run -d -p 8000:8000 --env-file .env faishalanwar/sentiment-app:2.0
+    ```
+
+4.  **Akses Aplikasi:**
+    Buka browser Anda dan kunjungi **`http://localhost:8000`**.
+
+---
+
+### **Untuk Developer (Menggunakan Source Code)**
+
+Jika Anda ingin mengembangkan, memodifikasi, atau melihat kode sumber aplikasi.
+
+#### **Opsi A: Dengan Docker (Build dari Source Code)**
+
+**Prasyarat:**
+* Git terinstall.
+* Docker terinstall.
+
+**Langkah-langkah:**
+
+1.  **Clone Repositori:**
+    ```bash
+    git clone [https://github.com/faishalanwar/sentix.git](https://github.com/faishalanwar/sentix.git)
+    cd sentix
+    ```
+    *(Ganti dengan URL repositori Anda yang sebenarnya)*
+
 2.  **Buat file `.env`:**
-    Buat sebuah file bernama `.env` di dalam folder `SENTIMENT_APP` dan tambahkan kunci API Anda.
+    Buat file `.env` di dalam folder proyek dan tambahkan kunci API Anda.
     ```
     GOOGLE_API_KEY="MASUKKAN_KUNCI_API_ANDA_DI_SINI"
     ```
 
 3.  **Bangun (Build) Image Docker:**
-    Buka terminal di dalam folder `SENTIMENT_APP` dan jalankan:
     ```bash
     docker build -t sentix .
     ```
 
 4.  **Jalankan Kontainer Docker:**
-    Jalankan kontainer dengan meneruskan file `.env` untuk variabel lingkungan.
     ```bash
     docker run -d -p 8000:8000 --env-file .env sentix
     ```
-    * `-d`: Menjalankan di latar belakang (detached).
-    * `-p 8000:8000`: Memetakan port 8000 dari komputer Anda ke port 8000 di dalam kontainer.
-    * `--env-file .env`: Cara aman untuk memuat variabel lingkungan (seperti API Key) dari file.
-
+    
 5.  **Akses Aplikasi:**
     Buka browser Anda dan kunjungi **`http://localhost:8000`**.
 
-### **2. Menjalankan Secara Lokal (Tanpa Docker)**
+#### **Opsi B: Secara Lokal (Tanpa Docker)**
 
 **Prasyarat:**
+* Git terinstall.
 * Python 3.8+ terinstall.
-* `pip` package manager.
 
 **Langkah-langkah:**
 
-1.  **Clone Repositori dan Masuk ke Folder:**
+1.  **Clone Repositori:**
     ```bash
-    git clone [https://github.com/Faishal-Anwar/Sentix-Aplikasi-Analisis-Sentimen-Berbasis-Web-dengan-Insight-AI]
-    cd SENTIMENT_APP
+    git clone [https://github.com/faishalanwar/sentix.git](https://github.com/faishalanwar/sentix.git)
+    cd sentix
     ```
 
-2.  **Buat dan Aktifkan Virtual Environment (Sangat Direkomendasikan):**
+2.  **Buat dan Aktifkan Virtual Environment:**
     * **Windows:**
         ```bash
         python -m venv venv
@@ -126,16 +142,31 @@ Ini adalah cara termudah dan paling andal untuk menjalankan aplikasi.
     ```
 
 4.  **Buat file `.env`:**
-    Sama seperti pada metode Docker, buat file `.env` dan isi dengan kunci API Anda.
-    ```
-    GOOGLE_API_KEY="MASUKKAN_KUNCI_API_ANDA_DI_SINI"
-    ```
+    Sama seperti sebelumnya, buat file `.env` dan isi dengan kunci API Anda.
 
 5.  **Jalankan Server Aplikasi:**
     ```bash
     uvicorn main:app --reload
     ```
-    * `--reload`: Server akan otomatis restart jika Anda membuat perubahan pada kode.
-
+    
 6.  **Akses Aplikasi:**
     Buka browser Anda dan kunjungi **`http://127.0.0.1:8000`**.
+
+---
+
+## **Struktur Proyek**
+
+```
+SENTIMENT_APP/
+├── Dockerfile
+├── main.py
+├── requirements.txt
+├── .env
+├── static/
+│   └── (File CSS atau gambar statis lainnya)
+└── templates/
+    ├── index.html
+    └── results.html
+```
+
+**Catatan:** Untuk gambar di bagian atas `README.md`, Anda perlu mengunggah screenshot aplikasi Anda (misalnya ke dalam folder `docs` di repo GitHub Anda) dan mengganti URL placeholder dengan URL gambar Anda yang sebenarnya.
