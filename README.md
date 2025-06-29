@@ -168,5 +168,3 @@ SENTIMENT_APP/
     ├── index.html
     └── results.html
 ```
-
-**Catatan:** Untuk gambar di bagian atas `README.md`, Anda perlu mengunggah screenshot aplikasi Anda (misalnya ke dalam folder `docs` di repo GitHub Anda) dan mengganti URL placeholder dengan URL gambar Anda yang sebenarnya.
